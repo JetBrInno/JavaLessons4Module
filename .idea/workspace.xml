@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfa164a-88e1-4d3d-aa8e-e200352b255d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/FirstTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0dfa164a-88e1-4d3d-aa8e-e200352b255d" name="Changes" comment="Tests ui">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Browser/Extensions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Browser/Frames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Browser/JSExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Browser/PageLoadStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Browser/SwitchTabs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/User-Agent-Switcher-for-Chrome-Chrome.crx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.Extensions.testWindow.executor": "Debug",
     "JUnit.FirstTest.takeScreen.executor": "Run",
     "JUnit.FirstTest.testAlert.executor": "Debug",
     "JUnit.FirstTest.testCookie.executor": "Debug",
@@ -45,57 +50,101 @@
     "JUnit.FirstTest.testSmth.executor": "Debug",
     "JUnit.FirstTest.testStart.executor": "Debug",
     "JUnit.FirstTest.testWindow.executor": "Debug",
+    "JUnit.Frames.testInfo.executor": "Run",
+    "JUnit.JSExecution.changeScore.executor": "Debug",
+    "JUnit.JSExecution.testInfo.executor": "Debug",
+    "JUnit.PageLoadStrategy.testInfo.executor": "Run",
+    "JUnit.SwitchTabs.testWindow.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.FirstTest.takeScreen">
-    <configuration name="FirstTest.takeScreen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sammy\Desktop\работа\4 модуль\JavaLessons4Module\src\test\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Browser" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Extensions.testWindow">
+    <configuration name="Extensions.testWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons4Module" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="takeScreen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Browser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Browser" />
+      <option name="MAIN_CLASS_NAME" value="Browser.Extensions" />
+      <option name="METHOD_NAME" value="testWindow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testAlert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Frames.testInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons4Module" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testAlert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Browser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Browser" />
+      <option name="MAIN_CLASS_NAME" value="Browser.Frames" />
+      <option name="METHOD_NAME" value="testInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testCookie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JSExecution.changeScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons4Module" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testCookie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Browser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Browser" />
+      <option name="MAIN_CLASS_NAME" value="Browser.JSExecution" />
+      <option name="METHOD_NAME" value="changeScore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testNavigate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JSExecution.testInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons4Module" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testNavigate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Browser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Browser" />
+      <option name="MAIN_CLASS_NAME" value="Browser.JSExecution" />
+      <option name="METHOD_NAME" value="testInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SwitchTabs.testWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons4Module" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Browser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Browser" />
+      <option name="MAIN_CLASS_NAME" value="Browser.SwitchTabs" />
       <option name="METHOD_NAME" value="testWindow" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -104,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTest.takeScreen" />
-        <item itemvalue="JUnit.FirstTest.testCookie" />
-        <item itemvalue="JUnit.FirstTest.testAlert" />
-        <item itemvalue="JUnit.FirstTest.testWindow" />
-        <item itemvalue="JUnit.FirstTest.testNavigate" />
+        <item itemvalue="JUnit.Extensions.testWindow" />
+        <item itemvalue="JUnit.JSExecution.changeScore" />
+        <item itemvalue="JUnit.JSExecution.testInfo" />
+        <item itemvalue="JUnit.Frames.testInfo" />
+        <item itemvalue="JUnit.SwitchTabs.testWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -122,5 +171,31 @@
       <updated>1740057158034</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Browser/SwitchTabs.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Browser/JSExecution.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Browser/JSExecution.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Browser/Extensions.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
