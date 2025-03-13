@@ -32,7 +32,6 @@ public class MainPageResolver implements ParameterResolver, BeforeEachCallback, 
     @Override
     public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
         throws ParameterResolutionException {
-        WebDriver driver = new ChromeDriver();
         extensionContext.getStore(namespace).put("driver", driver);
 
         return new MainPage(driver);
