@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class BasePage {
     private final By searchField = By.xpath("//input[@id='search-field']");
 
-    protected final WebDriver driver;
+    public final WebDriver driver;
 
     protected final WebDriverWait wait;
 

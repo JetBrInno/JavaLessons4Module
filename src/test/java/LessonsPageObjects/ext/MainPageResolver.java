@@ -17,11 +17,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MainPageResolver implements ParameterResolver, BeforeEachCallback, AfterEachCallback {
+import static LessonsPageObjects.ext.ChromeDriverHelper.DRIVER;
+import static LessonsPageObjects.ext.ChromeDriverHelper.getDriver;
 
-    public static Namespace namespace = ExtensionContext.Namespace.create("my_store");
-
-    private WebDriver driver;
+public class MainPageResolver implements ParameterResolver {
 
     @Override
     public boolean supportsParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
@@ -32,25 +31,8 @@ public class MainPageResolver implements ParameterResolver, BeforeEachCallback, 
     @Override
     public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
         throws ParameterResolutionException {
-        extensionContext.getStore(namespace).put("driver", driver);
+        WebDriver driver = (WebDriver) extensionContext.getStore(ChromeDriverHelper.namespace).getOrComputeIfAbsent(DRIVER, k -> getDriver());
 
         return new MainPage(driver);
-    }
-
-
-    @Override
-    public void afterEach(ExtensionContext context) throws Exception {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
-
-    @Override
-    public void beforeEach(ExtensionContext context) throws Exception {
-        ChromeOptions options = new ChromeOptions();
-        options.setPageLoadStrategy(org.openqa.selenium.PageLoadStrategy.EAGER);
-        driver = new ChromeDriver(options); // 1. Запускается драйвер 2. Драйвер запускает браузер
-        driver.manage().window().setPosition(new Point(2500, 50));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // неявное ожидание
     }
 }

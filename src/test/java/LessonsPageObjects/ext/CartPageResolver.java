@@ -8,6 +8,9 @@ import org.junit.jupiter.api.extension.ParameterResolutionException;
 import org.junit.jupiter.api.extension.ParameterResolver;
 import org.openqa.selenium.WebDriver;
 
+import static LessonsPageObjects.ext.ChromeDriverHelper.DRIVER;
+import static LessonsPageObjects.ext.ChromeDriverHelper.getDriver;
+
 public class CartPageResolver implements ParameterResolver {
 
     @Override
@@ -19,7 +22,7 @@ public class CartPageResolver implements ParameterResolver {
     @Override
     public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
         throws ParameterResolutionException {
-        WebDriver driver = (WebDriver) extensionContext.getStore(MainPageResolver.namespace).get("driver");
+        WebDriver driver = (WebDriver) extensionContext.getStore(ChromeDriverHelper.namespace).getOrComputeIfAbsent(DRIVER, k -> getDriver());
 
         return new CartPage(driver);
     }

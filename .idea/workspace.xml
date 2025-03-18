@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dfa164a-88e1-4d3d-aa8e-e200352b255d" name="Changes" comment="Locators">
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElement/ClearDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElement/ClickDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElement/GetScreenshotDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElement/PropertiesDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElement/RectDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElement/SendKeysDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebElement/StateDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/LabirintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/LabirintTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/CartPageResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/CartPageResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/ChromeDriverResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/ChromeDriverHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/MainPageResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/MainPageResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/SearchResultPageResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/SearchResultPageResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/BasePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,6 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2tJ561KV1LrlDkzV4cWHgWkjaXu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,6 +57,8 @@
     "JUnit.GetScreenshotDemo.sendKeys.executor": "Run",
     "JUnit.JSExecution.changeScore.executor": "Debug",
     "JUnit.JSExecution.testInfo.executor": "Debug",
+    "JUnit.LabirintTest.testList (1).executor": "Run",
+    "JUnit.LabirintTest.testList.executor": "Run",
     "JUnit.PageLoadStrategy.testInfo.executor": "Run",
     "JUnit.PropertiesDemo.executor": "Run",
     "JUnit.PropertiesDemo.testGetCssAndAttribute.executor": "Run",
@@ -74,7 +74,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -86,18 +87,34 @@
       <recent name="Browser" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PropertiesDemo">
-    <configuration name="GetScreenshotDemo.sendKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LabirintTest.testList (1)">
+    <configuration name="LabirintTest.testList (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons4Module" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WebElement.*" />
+          <option name="PATTERN" value="LessonsPageObjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="WebElement" />
-      <option name="MAIN_CLASS_NAME" value="WebElement.GetScreenshotDemo" />
-      <option name="METHOD_NAME" value="sendKeys" />
+      <option name="PACKAGE_NAME" value="LessonsPageObjects" />
+      <option name="MAIN_CLASS_NAME" value="LessonsPageObjects.LabirintTest" />
+      <option name="METHOD_NAME" value="testList(LessonsPageObjects.page_object.SearchResultPage,LessonsPageObjects.page_object.CartPage)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LabirintTest.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLessons4Module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LessonsPageObjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LessonsPageObjects" />
+      <option name="MAIN_CLASS_NAME" value="LessonsPageObjects.LabirintTest" />
+      <option name="METHOD_NAME" value="testList(LessonsPageObjects.page_object.SearchResultPage,LessonsPageObjects.page_object.CartPage,org.openqa.selenium.chrome.ChromeDriver)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,29 +166,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StateDemo.testStates" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaLessons4Module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WebElement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="WebElement" />
-      <option name="MAIN_CLASS_NAME" value="WebElement.StateDemo" />
-      <option name="METHOD_NAME" value="testStates" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LabirintTest.testList (1)" />
+        <item itemvalue="JUnit.LabirintTest.testList" />
         <item itemvalue="JUnit.PropertiesDemo" />
         <item itemvalue="JUnit.PropertiesDemo.testGetCssAndAttribute" />
         <item itemvalue="JUnit.RectDemo" />
-        <item itemvalue="JUnit.StateDemo.testStates" />
-        <item itemvalue="JUnit.GetScreenshotDemo.sendKeys" />
       </list>
     </recent_temporary>
   </component>
