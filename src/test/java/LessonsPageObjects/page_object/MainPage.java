@@ -10,11 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class MainPage extends BasePage {
-    public BookCardComponent bookCardComponent;
 
     public MainPage(WebDriver driver) {
         super(driver);
-        bookCardComponent = new BookCardComponent(driver, wait);
     }
 
     public void open() {

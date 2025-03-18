@@ -11,22 +11,25 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookCardComponent  {
 
-    protected final WebDriver driver;
+    private final WebElement element;
 
-    protected final WebDriverWait wait;
+    private final By button = By.cssSelector(".btn-tocart");
 
-    private final By button = By.xpath("//a[contains(@class, 'buy-link')]");
+    private final By title = By.cssSelector(".product-card__name");
 
-    public BookCardComponent(WebDriver driver, WebDriverWait wait) {
-        this.driver = driver;
-        this.wait = wait;
+    public BookCardComponent(WebElement element) {
+        this.element = element;
     }
 
     public WebElement findButton() {
-        return driver.findElement(this.button);
+        return element.findElement(this.button);
     }
 
-    public void waitButtonChanged() {
+    public String getTitle() {
+        return element.findElement(this.title).getText();
+    }
+
+    public void waitButtonChanged(WebDriverWait wait) {
         wait.until(ExpectedConditions.textToBe(this.button, "оформить"));
     }
 }

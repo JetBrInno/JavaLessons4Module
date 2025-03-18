@@ -2,6 +2,9 @@ package LessonsPageObjects.page_object;
 
 import LessonsPageObjects.component.BookCardComponent;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,12 +12,24 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchResultPage extends BasePage {
-
-    public BookCardComponent bookCardComponent;
+    private final By bookCardComponent = By.cssSelector(".product-card");
 
     public SearchResultPage(WebDriver driver) {
         super(driver);
-        bookCardComponent = new BookCardComponent(driver, wait);
+    }
+
+    public BookCardComponent getBookCardComponent() {
+        WebElement bookCardElement = driver.findElement(bookCardComponent);
+        return new BookCardComponent(bookCardElement);
+    }
+
+    public List<BookCardComponent> getBookCardComponents() {
+        List<BookCardComponent> bookCardComponents = new ArrayList<>();
+        List<WebElement> bookCardElements = driver.findElements(bookCardComponent);
+
+        bookCardElements.forEach(bookCardElement -> bookCardComponents.add(new BookCardComponent(bookCardElement)));
+
+        return bookCardComponents;
     }
 
     public String getHeaderText() {

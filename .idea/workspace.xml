@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dfa164a-88e1-4d3d-aa8e-e200352b255d" name="Changes" comment="Locators">
+    <list default="true" id="0dfa164a-88e1-4d3d-aa8e-e200352b255d" name="Changes" comment="Resolvers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/LabirintTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/LabirintTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/CartPageResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/CartPageResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/ChromeDriverResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/ChromeDriverHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/MainPageResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/MainPageResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/SearchResultPageResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/SearchResultPageResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/component/BookCardComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/component/BookCardComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/ChromeDriverHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/ext/ChromeDriverHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/SearchResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LessonsPageObjects/page_object/SearchResultPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "JetBrInno"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/JetBrInno/JavaLessons4Module.git",
+    "accountId": "68aec006-0e43-484a-b9d8-f54261967a7e"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -59,6 +71,7 @@
     "JUnit.JSExecution.testInfo.executor": "Debug",
     "JUnit.LabirintTest.testList (1).executor": "Run",
     "JUnit.LabirintTest.testList.executor": "Run",
+    "JUnit.LabirintTest.testThreeButtons.executor": "Debug",
     "JUnit.PageLoadStrategy.testInfo.executor": "Run",
     "JUnit.PropertiesDemo.executor": "Run",
     "JUnit.PropertiesDemo.testGetCssAndAttribute.executor": "Run",
@@ -120,6 +133,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LabirintTest.testThreeButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLessons4Module" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LessonsPageObjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LessonsPageObjects" />
+      <option name="MAIN_CLASS_NAME" value="LessonsPageObjects.LabirintTest" />
+      <option name="METHOD_NAME" value="testThreeButtons(LessonsPageObjects.page_object.SearchResultPage,LessonsPageObjects.page_object.CartPage)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PropertiesDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons4Module" />
       <extension name="coverage">
@@ -151,28 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaLessons4Module" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WebElement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="WebElement" />
-      <option name="MAIN_CLASS_NAME" value="WebElement.RectDemo" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LabirintTest.testList (1)" />
+        <item itemvalue="JUnit.LabirintTest.testThreeButtons" />
         <item itemvalue="JUnit.LabirintTest.testList" />
         <item itemvalue="JUnit.PropertiesDemo" />
         <item itemvalue="JUnit.PropertiesDemo.testGetCssAndAttribute" />
-        <item itemvalue="JUnit.RectDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -193,12 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1741104636717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Resolvers">
+      <option name="closed" value="true" />
+      <created>1742315827041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742315827041</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Locators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Locators" />
+    <MESSAGE value="Resolvers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolvers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

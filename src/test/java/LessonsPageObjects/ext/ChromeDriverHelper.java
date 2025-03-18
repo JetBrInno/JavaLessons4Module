@@ -1,6 +1,7 @@
 package LessonsPageObjects.ext;
 
 import org.junit.jupiter.api.extension.*;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,7 +27,7 @@ public class ChromeDriverHelper implements AfterEachCallback {
 
     public static WebDriver getDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.setPageLoadStrategy(org.openqa.selenium.PageLoadStrategy.EAGER);
+        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         WebDriver driver = new ChromeDriver(options); // 1. Запускается драйвер 2. Драйвер запускает браузер
         driver.manage().window().setPosition(new Point(2500, 50));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
