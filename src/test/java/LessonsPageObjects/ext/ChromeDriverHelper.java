@@ -27,7 +27,7 @@ public class ChromeDriverHelper implements AfterEachCallback {
 
     public static WebDriver getDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         WebDriver driver = new ChromeDriver(options); // 1. Запускается драйвер 2. Драйвер запускает браузер
         driver.manage().window().setPosition(new Point(2500, 50));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
