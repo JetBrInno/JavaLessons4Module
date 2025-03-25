@@ -37,6 +37,16 @@
       <artifactId>ashot</artifactId>
       <version>1.5.4</version>
     </dependency>
+    <dependency>
+      <groupId>com.codeborne</groupId>
+      <artifactId>selenide</artifactId>
+      <version>7.7.3</version>
+    </dependency>
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-selenide</artifactId>
+      <version>2.21.0</version>
+    </dependency>
   </dependencies>
 
   <dependencyManagement>
