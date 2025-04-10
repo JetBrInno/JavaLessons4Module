@@ -25,6 +25,7 @@ public class DragAndDropActions {
         ChromeOptions options = new ChromeOptions();
         options.addExtensions(new File("src/test/resources/User-Agent-Switcher-for-Chrome-Chrome.crx"));
         options.setPageLoadStrategy(org.openqa.selenium.PageLoadStrategy.EAGER);
+        options.addArguments("--headless");
         driver = new ChromeDriver(options); // 1. Запускается драйвер 2. Драйвер запускает браузер
         driver.manage().window().setPosition(new Point(2500, 50));
     }
